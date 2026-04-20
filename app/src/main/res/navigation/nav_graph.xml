@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.studenthousing.app.ui.auth.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_properties"
+            app:destination="@id/propertiesFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_signup"
+            app:destination="@id/signupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.studenthousing.app.ui.auth.SignupFragment"
+        android:label="Sign Up">
+        <action
+            android:id="@+id/action_signup_to_verify"
+            app:destination="@id/verifyEmailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyEmailFragment"
+        android:name="com.studenthousing.app.ui.auth.VerifyEmailFragment"
+        android:label="Verify Email">
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_verify_to_properties"
+            app:destination="@id/propertiesFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/propertiesFragment"
+        android:name="com.studenthousing.app.ui.properties.PropertiesFragment"
+        android:label="Properties">
+        <action
+            android:id="@+id/action_properties_to_detail"
+            app:destination="@id/propertyDetailFragment" />
+        <action
+            android:id="@+id/action_properties_to_bookings"
+            app:destination="@id/bookingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/propertyDetailFragment"
+        android:name="com.studenthousing.app.ui.properties.PropertyDetailFragment"
+        android:label="Property Details">
+        <argument
+            android:name="property_id"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingsFragment"
+        android:name="com.studenthousing.app.ui.booking.BookingsFragment"
+        android:label="My Bookings" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.studenthousing.app.ui.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_editProfile"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.studenthousing.app.ui.profile.EditProfileFragment"
+        android:label="Edit Profile">
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="university"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="major"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.studenthousing.app.ui.favorites.FavoritesFragment"
+        android:label="My Favorites" />
+
+    <fragment
+        android:id="@+id/addPropertyFragment"
+        android:name="com.studenthousing.app.ui.owner.AddPropertyFragment"
+        android:label="Add Property">
+        <action
+            android:id="@+id/action_addProperty_to_mapPicker"
+            app:destination="@id/mapPickerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapPickerFragment"
+        android:name="com.studenthousing.app.ui.owner.MapPickerFragment"
+        android:label="Pick Location" />
+
+    <fragment
+        android:id="@+id/myPropertiesFragment"
+        android:name="com.studenthousing.app.ui.owner.MyPropertiesFragment"
+        android:label="My Properties" />
+
+    <fragment
+        android:id="@+id/bookingRequestsFragment"
+        android:name="com.studenthousing.app.ui.owner.BookingRequestsFragment"
+        android:label="Booking Requests" />
+
+    <fragment
+        android:id="@+id/roommatesFragment"
+        android:name="com.studenthousing.app.ui.roommates.RoommatesFragment"
+        android:label="Find Roommate" />
+
+    <fragment
+        android:id="@+id/connectionsFragment"
+        android:name="com.studenthousing.app.ui.roommates.ConnectionsFragment"
+        android:label="My Connections" />
+
+</navigation>

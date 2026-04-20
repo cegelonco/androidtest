@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_xl">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_title_large"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/spacing_xl" />
+
+        <!-- Phone -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editPhoneLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_md"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary"
+            app:prefixText="+961 ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPhoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- University -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_xs" />
+
+        <Spinner
+            android:id="@+id/editUniversitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_type_chip"
+            android:padding="12dp"
+            android:popupBackground="@color/surface_dark"
+            android:layout_marginBottom="@dimen/spacing_md" />
+
+        <!-- USJ Sub-campus (hidden by default) -->
+        <TextView
+            android:id="@+id/editUsjLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USJ Campus / Establishment"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_xs"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/editUsjSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_type_chip"
+            android:padding="12dp"
+            android:popupBackground="@color/surface_dark"
+            android:layout_marginBottom="@dimen/spacing_md"
+            android:visibility="gone" />
+
+        <!-- Major -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_xs" />
+
+        <Spinner
+            android:id="@+id/editMajorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_type_chip"
+            android:padding="12dp"
+            android:popupBackground="@color/surface_dark"
+            android:layout_marginBottom="@dimen/spacing_xl" />
+
+        <!-- Error text -->
+        <TextView
+            android:id="@+id/editProfileError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error"
+            android:textSize="@dimen/text_body"
+            android:layout_marginBottom="@dimen/spacing_md"
+            android:visibility="gone" />
+
+        <!-- Save Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="Save Changes"
+            android:textSize="@dimen/text_price"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="@dimen/button_corner_radius" />
+
+        <!-- Progress -->
+        <ProgressBar
+            android:id="@+id/editProfileProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:indeterminateTint="@color/primary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

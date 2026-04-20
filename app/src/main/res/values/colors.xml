@@ -1,0 +1,33 @@
+<resources>
+    <!-- Primary palette (from web app) -->
+    <color name="primary">#FF6EC4DB</color>
+    <color name="primary_dark">#FF4A9BB8</color>
+    <color name="on_primary">#FF1E1F2E</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#FF9B8FB8</color>
+    <color name="on_secondary">#FF1E1F2E</color>
+
+    <!-- Tertiary -->
+    <color name="tertiary">#FFE8A87C</color>
+    <color name="on_tertiary">#FF1E1F2E</color>
+
+    <!-- Backgrounds & surfaces -->
+    <color name="background_dark">#FF151620</color>
+    <color name="surface_dark">#FF1E1F2E</color>
+    <color name="surface_variant">#FF2A2B3D</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFF5F5F7</color>
+    <color name="text_secondary">#FFC4C4D4</color>
+
+    <!-- Semantic -->
+    <color name="error">#FFE87C7C</color>
+    <color name="on_error">#FF1E1F2E</color>
+    <color name="success">#FF5FB3B3</color>
+    <color name="warning_orange">#FFFB8C00</color>
+
+    <!-- Legacy (kept for compatibility) -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

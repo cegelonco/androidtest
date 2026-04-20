@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Student Housing</string>
+    <string name="offline_mode">Offline mode: showing cached data</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="near_campus">Near campus</string>
+    <string name="book_now">Book Now</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="login_heading">Student Housing</string>
+    <string name="login_subtitle">Find your perfect student home</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="bookings">Bookings</string>
+    <string name="search_properties">Search properties…</string>
+    <string name="distance_unavailable">Distance unavailable</string>
+    <string name="distance_format">%.1f km from campus</string>
+    <string name="price_format">$%s/mo</string>
+    <string name="no_description">No description available</string>
+    <string name="property_image">Property image</string>
+    <string name="empty_properties">No properties found</string>
+    <string name="empty_bookings">No bookings yet</string>
+    <string name="error_occurred">Something went wrong</string>
+    <string name="retry">Retry</string>
+
+    <!-- Auth -->
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="signup_subtitle">Join the student housing community</string>
+    <string name="choose_account_type">Choose your account type</string>
+    <string name="signup_student_subtitle">Find your perfect student home</string>
+    <string name="signup_owner_subtitle">List your property for students</string>
+    <string name="student">Student</string>
+    <string name="property_owner">Property Owner</string>
+    <string name="error_invalid_phone">Please enter a valid phone number</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="university">University</string>
+    <string name="department">Department</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+    <string name="field_required">This field is required</string>
+    <string name="error_passwords_mismatch">Passwords do not match</string>
+
+    <!-- Email verification -->
+    <string name="verify_email">Verify Your Email</string>
+    <string name="verification_code">6-digit code</string>
+    <string name="verify">Verify</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="resend_in">Resend in %ds</string>
+    <string name="verification_sent_to">We sent a code to %s</string>
+    <string name="error_invalid_code">Please enter a valid 6-digit code</string>
+    <string name="code_resent">Verification code resent</string>
+
+    <!-- Menu -->
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="favorite">Favorite</string>
+    <string name="my_favorites">My Favorites</string>
+    <string name="empty_favorites">No favorites yet</string>
+
+    <!-- Owner / Property creation -->
+    <string name="add_property">Add Property</string>
+    <string name="property_title">Property Title</string>
+    <string name="description">Description</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="precise_location">Precise Location (for Near Me)</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="use_my_location">Use My Location</string>
+    <string name="price_per_month">Price/month</string>
+    <string name="rooms">Rooms</string>
+    <string name="property_type">Property Type</string>
+    <string name="type_apartment">Apt</string>
+    <string name="type_house">House</string>
+    <string name="type_studio">Studio</string>
+    <string name="type_dorm">Dorm</string>
+    <string name="image_url_hint">Image URL (paste a link)</string>
+    <string name="set_property_location">Set Property Location (GPS)</string>
+    <string name="location_not_set">Location not set yet</string>
+    <string name="location_set">Location: %.4f, %.4f</string>
+    <string name="property_photos">Property Photos (max 6)</string>
+    <string name="select_photos">Select Photos from Gallery</string>
+    <string name="photos_count">%d / %d photos selected</string>
+    <string name="photos_count_zero">0 / 6 photos selected</string>
+
+    <!-- Owner -->
+    <string name="my_properties">My Properties</string>
+    <string name="no_properties_yet">You haven\'t added any properties yet</string>
+
+    <!-- Filter -->
+    <string name="filter">Filter</string>
+    <string name="filter_properties">Filter Properties</string>
+    <string name="all">All</string>
+    <string name="any">Any</string>
+    <string name="max_price">Max Price</string>
+    <string name="any_price">Any price</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+
+    <!-- Property management -->
+    <string name="view_details">View Details</string>
+    <string name="delete_property">Delete Property</string>
+    <string name="delete_property_confirm">Are you sure you want to delete "%s"? This cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="property_deleted">Property deleted</string>
+
+    <!-- Booking requests (owner) -->
+    <string name="booking_requests">Booking Requests</string>
+    <string name="no_booking_requests">No booking requests yet</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="confirm_booking_msg">Confirm booking for %s?</string>
+    <string name="reject_booking">Reject Booking</string>
+    <string name="reject_booking_msg">Reject booking from %s?</string>
+    <string name="action_completed">Done</string>
+
+    <!-- Roommates -->
+    <string name="find_roommate">Find a Roommate</string>
+    <string name="roommate_subtitle">Connect with other students to split rent and save 50%%</string>
+    <string name="roommate">Roommate</string>
+    <string name="connect">Connect</string>
+    <string name="skip">Skip</string>
+    <string name="my_connections">My Connections</string>
+    <string name="no_roommates">No potential roommates found</string>
+    <string name="no_connections">No connections yet</string>
+    <string name="connection_sent">Connection request sent!</string>
+    <string name="incoming_requests">Incoming Requests</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <!-- Map picker -->
+    <string name="pick_on_map">Pick Location on Map</string>
+    <string name="pick_location">Pick Property Location</string>
+    <string name="tap_to_select_location">Tap on the map to place a pin at your property\'s exact location</string>
+    <string name="no_location_selected">Tap the map to select a location</string>
+    <string name="location_selected_format">Selected: %.4f, %.4f</string>
+    <string name="confirm_location">Confirm Location</string>
+    <string name="please_select_location">Please tap the map to select a location first</string>
+    <string name="location_on_map">Location</string>
+</resources>

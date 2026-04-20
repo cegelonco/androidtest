@@ -1,0 +1,18 @@
+# Android build files
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Web app (kept in separate repo)
+web code/
+Capstone Project Description.pdf
